@@ -3,7 +3,7 @@ import { Component } from "react";
 
 class FoodItem extends Component {
   render() {
-    const { image, title, price, description, catagory } = this.props;
+    const { image, title, price, description } = this.props;
     return (
       <div className="single-food">
         <div className="img">
@@ -14,9 +14,6 @@ class FoodItem extends Component {
           <p>{price}</p>
         </div>
         <div className="food-desc">{description.slice(0, 300)}...</div>
-        <div className="category">
-          <p>{category}</p>
-        </div>
       </div>
     );
   }

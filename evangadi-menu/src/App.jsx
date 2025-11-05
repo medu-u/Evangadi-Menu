@@ -17,7 +17,6 @@ class App extends Component {
               title={food.title}
               price={food.price}
               description={food.desc}
-              category={food.category}
             />
           ))}
         </div>
