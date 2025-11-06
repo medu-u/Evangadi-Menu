@@ -7,7 +7,7 @@ import FoodContainer from "./Components/FoodMenu/FoodContainer";
 class App extends Component {
   render() {
     return (
-      <div className="all-container">
+      <div className="allContainer">
         <Header />
         <FoodContainer />
       </div>
