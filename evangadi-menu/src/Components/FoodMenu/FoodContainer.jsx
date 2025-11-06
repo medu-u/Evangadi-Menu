@@ -8,6 +8,7 @@ class FoodContainer extends Component {
     
     return (
         <div className={style.foodContainer}>
+          
           {menu.map((food, i) => (
             <FoodItem
               key={i} singleFoods = {food} />

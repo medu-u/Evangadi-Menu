@@ -5,7 +5,7 @@ import style from "./FoodItem.module.css";
 class FoodItem extends Component {
   render() {
     const { singleFoods } = this.props;
-    const { image, title, price, desc, link } = singleFoods;
+    const { img, title, price, desc, link } = singleFoods;
 
     const size = 300;
     const trimmed = desc.length >= size ? `${desc.slice(0, 300)}...` : desc;
@@ -13,7 +13,7 @@ class FoodItem extends Component {
     return (
       <div className={style.singleFood}>
         <div className="img">
-          <img src={image} />
+          <img src={img} />
         </div>
         <div className={style.titlePrice}>
           <h3>{title}</h3>
